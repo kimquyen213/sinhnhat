@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chúc Mừng Sinh Nhật</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="content">
+      <div class="left">
+        <img src="image/hinh4.jpg" alt="Happy Birthday" class="birthday-img">
+      </div>
+      <div class="heart-container">
+        <span class="heart"></span>
+        <span class="heart"></span>
+        <span class="heart"></span>
+      </div>
+
+      <div class="right">
+        <h1>Chúc Mừng Sinh Nhật, Anh Yêu! 🎂</h1>
+        <p>
+          Một ngày đặc biệt dành tặng cho một người đặc biệt. Sang tuổi 20 tròn chỉnh, chúc cho những ước mơ và mục tiêu của anh sẽ sớm thành hiện thực. 
+          Mỗi ngày trôi qua của anh sẽ là một ngày tràn đầy tình yêu, tiếng cười và hạnh phúc. Bởi vì khi thấy anh vui vẻ, hạnh phúc, nở nụ cười – 
+          em như thấy mặt trời riêng của mình vậy đó. Chúc mừng sinh nhật anh, chồng êuu của emm ❤️
+        </p>
+        <button onclick="playMusic()">Bấm vào đây nè!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chỉ dùng 1 audio với link từ vocaroo -->
+  <audio id="birthdaySong" loop>
+    <source src="https://media.vocaroo.com/mp3/1kztCLnb03o6" type="audio/mp3">
+    Trình duyệt không hỗ trợ phát nhạc.
+  </audio>
+
+  <!-- Nơi tạo trái tim bay -->
+  <div id="hearts"></div>
+
+  <script>
+    function playMusic() {
+      const audio = document.getElementById("birthdaySong");
+      audio.play();
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
